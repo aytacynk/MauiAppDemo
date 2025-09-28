@@ -9,16 +9,27 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object? sender, EventArgs e)
+        private void OnCounterClicked(object sender, EventArgs e)
         {
-            count++;
+            //count++;
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+            //if (count == 1)
+            //    CounterBtn.Text = $"Clicked {count} time";
+            //else
+            //    CounterBtn.Text = $"Clicked {count} times";
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            //SemanticScreenReader.Announce(CounterBtn.Text);
+        }
+
+        private void Click_Tapped(object sender, TappedEventArgs e)
+        {
+            //DisplayAlert("Tıklandı", "Label üstüne tıkladınız", "OK");
+            // btnLorem.Text = "Butona Tıklandı";
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            //DisplayAlert("Butona Tıklandı", "Tıklama Başarılı", "Klar");
         }
     }
 }
