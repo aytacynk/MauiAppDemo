@@ -31,5 +31,17 @@
         {
             //DisplayAlert("Butona Tıklandı", "Tıklama Başarılı", "Klar");
         }
+
+        private void Entry_Completed(object sender, EventArgs e)
+        {
+            Entry entry = (Entry)sender;// sender'ı Entry olarak tanımladık
+            DisplayAlert("Entry Tamamlandı", $"Girdiğiniz metin:  {entry.Text}", "OK");// Entry içindeki Text değerini aldık
+
+        }
+
+        private void Entry_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
