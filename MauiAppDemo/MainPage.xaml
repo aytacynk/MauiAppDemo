@@ -94,12 +94,21 @@
           Aspect="AspectFill"
            Opacity="0.9"/>
     </Frame>-->
+    <StackLayout>
 
-    <Entry Placeholder="Şifrenizi Giriniz"
+        <Entry x:Name="entryEmail" Placeholder="Email Giriniz"
+            Keyboard="Email"
+            FontSize="15"
+            WidthRequest="150"
+            HeightRequest="50"
+            TextColor="Black"
+            BackgroundColor="PaleGreen"
+            MaxLength="10"
+            Margin="10,0,0,20"
+        />
+        <Entry x:Name="entryPassword" Placeholder="Şifrenizi Giriniz"
            IsPassword="True"
            Keyboard="Numeric"
-           HorizontalOptions="Center"
-           VerticalOptions="Center"
            WidthRequest="150"
            FontSize="15"
            TextColor="Black"
@@ -109,4 +118,8 @@
            TextChanged="Entry_TextChanged"
            Margin="0,0,0,20"
            />
+        <Button Text="Giriş Yap" Clicked="GirisYap_Clicked"/>
+
+
+    </StackLayout>
 </ContentPage>

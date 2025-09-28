@@ -43,5 +43,21 @@
         {
 
         }
+
+        private void GirisYap_Clicked(object sender, EventArgs e)
+        {
+            //Kullanıcı giriş yaptıktan sonra alanları temizle
+
+            if (entryEmail.Text == "aytacyanik@hotmail.com.tr" && entryPassword.Text = "123456")
+            {
+                DisplayAlert("Giriş Yapıldı", $"Email: {entryEmail.Text} \nPassword: {entryPassword.Text}", "OK");
+
+            }
+            else
+            {
+                DisplayAlert("Hata", "Email veya Parola Hatalı", "OK");
+            }
+
+        }
     }
 }
