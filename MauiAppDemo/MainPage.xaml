@@ -97,15 +97,16 @@
 
     <Entry Placeholder="Şifrenizi Giriniz"
            IsPassword="True"
+           Keyboard="Numeric"
            HorizontalOptions="Center"
            VerticalOptions="Center"
            WidthRequest="150"
            FontSize="15"
            TextColor="Black"
-           BackgroundColor="Aqua"
+           BackgroundColor="OrangeRed"
            MaxLength="10"
-           Keyboard="Text"
            Completed="Entry_Completed"
            TextChanged="Entry_TextChanged"
+           Margin="0,0,0,20"
            />
 </ContentPage>
