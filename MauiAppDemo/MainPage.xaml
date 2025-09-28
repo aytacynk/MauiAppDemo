@@ -95,7 +95,8 @@
            Opacity="0.9"/>
     </Frame>-->
 
-    <Entry Placeholder="Enter your name"
+    <Entry Placeholder="Şifrenizi Giriniz"
+           IsPassword="True"
            HorizontalOptions="Center"
            VerticalOptions="Center"
            WidthRequest="150"
