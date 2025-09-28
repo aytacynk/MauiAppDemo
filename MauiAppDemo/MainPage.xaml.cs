@@ -47,11 +47,15 @@
         private void GirisYap_Clicked(object sender, EventArgs e)
         {
             //Kullanıcı giriş yaptıktan sonra alanları temizle
+            if (string.IsNullOrEmpty(entryPassword.Text) || string.IsNullOrEmpty(entryEmail.Text))
+            {
+                DisplayAlert("Hata", "Email veya Parola boş olamaz", "OK");
+                return;
+            }
 
-            if (entryEmail.Text == "aytacyanik@hotmail.com.tr" && entryPassword.Text = "123456")
+            if (entryEmail.Text.ToString() == "aytacyanik@" && entryPassword.Text.ToString() == "123456")
             {
                 DisplayAlert("Giriş Yapıldı", $"Email: {entryEmail.Text} \nPassword: {entryPassword.Text}", "OK");
-
             }
             else
             {
