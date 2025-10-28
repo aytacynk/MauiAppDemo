@@ -44,10 +44,33 @@
 
         }
 
-        private void Switch_Toggled(object sender, ToggledEventArgs e)
+        private void OnCheckBoxCheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
         {
-            switchStatusLabel.Text = e.Value ? "Bildirimler Açık" : "Bildirimler Kapalı";
+            var selectedCategories = new List<string>();
+
+            if (sportsCheckBox.IsChecked)
+                selectedCategories.Add("Seçenek spor");
+            if (musicCheckBox.IsChecked)
+                selectedCategories.Add("Seçenek music");
+            if (teknologyCheckBox.IsChecked)
+                selectedCategories.Add("Seçenek teknology");
+
+            if (selectedCategories.Count > 0)
+            {
+                string message = "Seçilen kategoriler: " + string.Join(", ", selectedCategories);
+                DisplayAlert("Kategoriler", message, "OK");
+            }
+            else
+            {
+                DisplayAlert("Kategoriler", "Hiçbir kategori seçilmedi.", "OK");
+            }
+
         }
+
+        //private void Switch_Toggled(object sender, ToggledEventArgs e)
+        //{
+        //    switchStatusLabel.Text = e.Value ? "Bildirimler Açık" : "Bildirimler Kapalı";
+        //}
 
         //private void RadioButton_CheckedChanged(object sender, CheckedChangedEventArgs e)
         //{

@@ -131,13 +131,29 @@
         <RadioButton GroupName="Colors" Value="Red" Content="Kırmızı" CheckedChanged="RadioButton_CheckedChanged"/>
         <Label x:Name="selectedColorLabel"></Label>-->
 
-        <VerticalStackLayout>
+        <!--<VerticalStackLayout>
             <HorizontalStackLayout VerticalOptions="Center">
                 <Label Text="Bildirimleri Aç/Kapat"></Label>
                 <Switch VerticalOptions="Start" Toggled="Switch_Toggled"></Switch>
             </HorizontalStackLayout>
             <Label x:Name="switchStatusLabel" FontSize="Medium" ></Label>
+        </VerticalStackLayout>-->
+        <VerticalStackLayout>
+            <Label Text="İlgiliendiğiniz kategorileri seçin:" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center"/>
+            <HorizontalStackLayout>
+                <CheckBox x:Name="sportsCheckBox" CheckedChanged="OnCheckBoxCheckBox_CheckedChanged"/>
+                <Label Text="Spor" VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox x:Name="musicCheckBox" CheckedChanged="OnCheckBoxCheckBox_CheckedChanged"/>
+                <Label Text="Müzik" VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox x:Name="teknologyCheckBox" CheckedChanged="OnCheckBoxCheckBox_CheckedChanged"/>
+                <Label Text="Teknoloji" VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+            <Label x:Name="checkedStatusLabel" FontSize="Medium" HorizontalOptions="Center"/>
         </VerticalStackLayout>
-
+        
     </StackLayout>
 </ContentPage>
