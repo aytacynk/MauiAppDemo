@@ -154,12 +154,32 @@
             </HorizontalStackLayout>
             <Label x:Name="checkedStatusLabel" FontSize="Medium" HorizontalOptions="Center"/>
         </VerticalStackLayout>-->
-        <Label x:Name="stepperValueLabel" 
+        <!--<Label x:Name="stepperValueLabel" 
                Text="Stepper Değeri: 0" 
                FontSize="30" 
                TextColor="Purple" 
                HorizontalOptions="Center" 
                VerticalOptions="Center"/>
-        <Stepper x:Name="myStepper" HorizontalOptions="Center" ValueChanged="myStepper_ValueChanged"  Minimum="10" Maximum="50" Increment="5"></Stepper>
+        <Stepper x:Name="myStepper" HorizontalOptions="Center" ValueChanged="myStepper_ValueChanged"  Minimum="10" Maximum="50" Increment="5"></Stepper>-->
+        <VerticalStackLayout>
+            <Label x:Name="sliderValueLabel" 
+                   Text="Slider Değeri: 0" 
+                   FontSize="30" 
+                   TextColor="Brown" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+            <Slider x:Name="mySlider" 
+                    Minimum="0" 
+                    Maximum="100" 
+                   ValueChanged="mySlider_ValueChanged"
+                    HorizontalOptions="Center"/>
+            <TimePicker x:Name="myTimePicker" PropertyChanged="OnTimeChanged" Format="HH:mm"></TimePicker>
+            <DatePicker x:Name="myDatePicker" 
+                    Format="dd/MM/yyyy" 
+                    MinimumDate="1986-01-01" 
+                    MaximumDate="2100-12-31" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" DateSelected="myDatePicker_DateSelected"/>
+        </VerticalStackLayout>
     </StackLayout>
 </ContentPage>

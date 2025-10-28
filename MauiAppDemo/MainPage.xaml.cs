@@ -44,10 +44,39 @@
 
         }
 
-        private void myStepper_ValueChanged(object sender, ValueChangedEventArgs e)
+        private void myDatePicker_DateSelected(object sender, DateChangedEventArgs e)
         {
-            stepperValueLabel.Text = $"Stepper Değeri: {e.NewValue:F1}";
+            UpdateSelectedDateTime();
+            DisplayAlert("Tarih Seçildi", $"Seçilen Tarih: {e.NewDate:d}", "OK");
         }
+
+        private void mySlider_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+
+        }
+
+        private void TimePicker_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            UpdateSelectedDateTime();
+
+            DisplayAlert("Saat Seçildi", $"Seçilen Saat: {myTimePicker.Time}", "OK");
+        }
+
+        private void OnTimeChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+
+        }
+
+        private void UpdateSelectedDateTime()
+        {
+            DateTime dateTime = myDatePicker.Date + myTimePicker.Time;
+            DisplayAlert("Tarih ve Saat Seçildi", $"Seçilen Tarih ve Saat: {dateTime.ToString("dd/MM/yyyy HH:mm")}", "OK");
+        }
+
+        //private void myStepper_ValueChanged(object sender, ValueChangedEventArgs e)
+        //{
+        //    stepperValueLabel.Text = $"Stepper Değeri: {e.NewValue:F1}";
+        //}
 
         //private void OnCheckBoxCheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
         //{
