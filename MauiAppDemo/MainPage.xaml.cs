@@ -44,28 +44,33 @@
 
         }
 
-        private void OnCheckBoxCheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
+        private void myStepper_ValueChanged(object sender, ValueChangedEventArgs e)
         {
-            var selectedCategories = new List<string>();
-
-            if (sportsCheckBox.IsChecked)
-                selectedCategories.Add("Seçenek spor");
-            if (musicCheckBox.IsChecked)
-                selectedCategories.Add("Seçenek music");
-            if (teknologyCheckBox.IsChecked)
-                selectedCategories.Add("Seçenek teknology");
-
-            if (selectedCategories.Count > 0)
-            {
-                string message = "Seçilen kategoriler: " + string.Join(", ", selectedCategories);
-                DisplayAlert("Kategoriler", message, "OK");
-            }
-            else
-            {
-                DisplayAlert("Kategoriler", "Hiçbir kategori seçilmedi.", "OK");
-            }
-
+            stepperValueLabel.Text = $"Stepper Değeri: {e.NewValue:F1}";
         }
+
+        //private void OnCheckBoxCheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
+        //{
+        //    var selectedCategories = new List<string>();
+
+        //    if (sportsCheckBox.IsChecked)
+        //        selectedCategories.Add("Seçenek spor");
+        //    if (musicCheckBox.IsChecked)
+        //        selectedCategories.Add("Seçenek music");
+        //    if (teknologyCheckBox.IsChecked)
+        //        selectedCategories.Add("Seçenek teknology");
+
+        //    if (selectedCategories.Count > 0)
+        //    {
+        //        string message = "Seçilen kategoriler: " + string.Join(", ", selectedCategories);
+        //        DisplayAlert("Kategoriler", message, "OK");
+        //    }
+        //    else
+        //    {
+        //        DisplayAlert("Kategoriler", "Hiçbir kategori seçilmedi.", "OK");
+        //    }
+
+        //}
 
         //private void Switch_Toggled(object sender, ToggledEventArgs e)
         //{

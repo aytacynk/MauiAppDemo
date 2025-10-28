@@ -138,7 +138,7 @@
             </HorizontalStackLayout>
             <Label x:Name="switchStatusLabel" FontSize="Medium" ></Label>
         </VerticalStackLayout>-->
-        <VerticalStackLayout>
+        <!--<VerticalStackLayout>
             <Label Text="İlgiliendiğiniz kategorileri seçin:" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center"/>
             <HorizontalStackLayout>
                 <CheckBox x:Name="sportsCheckBox" CheckedChanged="OnCheckBoxCheckBox_CheckedChanged"/>
@@ -153,7 +153,13 @@
                 <Label Text="Teknoloji" VerticalOptions="Center"/>
             </HorizontalStackLayout>
             <Label x:Name="checkedStatusLabel" FontSize="Medium" HorizontalOptions="Center"/>
-        </VerticalStackLayout>
-        
+        </VerticalStackLayout>-->
+        <Label x:Name="stepperValueLabel" 
+               Text="Stepper Değeri: 0" 
+               FontSize="30" 
+               TextColor="Purple" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Center"/>
+        <Stepper x:Name="myStepper" HorizontalOptions="Center" ValueChanged="myStepper_ValueChanged"  Minimum="10" Maximum="50" Increment="5"></Stepper>
     </StackLayout>
 </ContentPage>
