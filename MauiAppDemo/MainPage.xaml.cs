@@ -44,14 +44,19 @@
 
         }
 
-        private void RadioButton_CheckedChanged(object sender, CheckedChangedEventArgs e)
+        private void Switch_Toggled(object sender, ToggledEventArgs e)
         {
-            if (e.Value == true)
-            {
-                RadioButton radioButton = (RadioButton)sender;
-                selectedColorLabel.Text = $"Seçilen renk: {radioButton.Content}";
-            }
+            switchStatusLabel.Text = e.Value ? "Bildirimler Açık" : "Bildirimler Kapalı";
         }
+
+        //private void RadioButton_CheckedChanged(object sender, CheckedChangedEventArgs e)
+        //{
+        //    if (e.Value == true)
+        //    {
+        //        RadioButton radioButton = (RadioButton)sender;
+        //        selectedColorLabel.Text = $"Seçilen renk: {radioButton.Content}";
+        //    }
+        //}
 
         //private void GirisYap_Clicked(object sender, EventArgs e)
         //{

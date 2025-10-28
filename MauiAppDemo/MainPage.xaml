@@ -95,7 +95,7 @@
           Opacity="0.9"/>
    </Frame>-->
 
-        <!--<Entry x:Name="entryEmail" Placeholder="Email Giriniz"
+    <!--<Entry x:Name="entryEmail" Placeholder="Email Giriniz"
            Keyboard="Email"
            FontSize="15"
            WidthRequest="150"
@@ -118,8 +118,8 @@
           Margin="0,0,0,20"
           />
        <Button Text="Giriş Yap" Clicked="GirisYap_Clicked"/>-->
-        <StackLayout>
-        <Label x:Name="labelSonuc" 
+    <StackLayout>
+        <!--<Label x:Name="labelSonuc" 
                Text="Lütfen Favori Renginizi Seçin" 
                FontSize="20" 
                TextColor="Blue" 
@@ -129,6 +129,15 @@
         <RadioButton GroupName="Colors" Value="Blue" Content="Mavi" CheckedChanged="RadioButton_CheckedChanged"/>
         <RadioButton GroupName="Colors" Value="Green" Content="Yeşil" CheckedChanged="RadioButton_CheckedChanged"/>
         <RadioButton GroupName="Colors" Value="Red" Content="Kırmızı" CheckedChanged="RadioButton_CheckedChanged"/>
-        <Label x:Name="selectedColorLabel"></Label>
+        <Label x:Name="selectedColorLabel"></Label>-->
+
+        <VerticalStackLayout>
+            <HorizontalStackLayout VerticalOptions="Center">
+                <Label Text="Bildirimleri Aç/Kapat"></Label>
+                <Switch VerticalOptions="Start" Toggled="Switch_Toggled"></Switch>
+            </HorizontalStackLayout>
+            <Label x:Name="switchStatusLabel" FontSize="Medium" ></Label>
+        </VerticalStackLayout>
+
     </StackLayout>
 </ContentPage>
