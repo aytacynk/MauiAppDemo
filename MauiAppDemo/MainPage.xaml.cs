@@ -44,24 +44,33 @@
 
         }
 
-        private void GirisYap_Clicked(object sender, EventArgs e)
+        private void RadioButton_CheckedChanged(object sender, CheckedChangedEventArgs e)
         {
-            //Kullanıcı giriş yaptıktan sonra alanları temizle
-            if (string.IsNullOrEmpty(entryPassword.Text) || string.IsNullOrEmpty(entryEmail.Text))
+            if (e.Value == true)
             {
-                DisplayAlert("Hata", "Email veya Parola boş olamaz", "OK");
-                return;
+                RadioButton radioButton = (RadioButton)sender;
+                selectedColorLabel.Text = $"Seçilen renk: {radioButton.Content}";
             }
-
-            if (entryEmail.Text.ToString() == "aytacyanik@" && entryPassword.Text.ToString() == "123456")
-            {
-                DisplayAlert("Giriş Yapıldı", $"Email: {entryEmail.Text} \nPassword: {entryPassword.Text}", "OK");
-            }
-            else
-            {
-                DisplayAlert("Hata", "Email veya Parola Hatalı", "OK");
-            }
-
         }
+
+        //private void GirisYap_Clicked(object sender, EventArgs e)
+        //{
+        //    //Kullanıcı giriş yaptıktan sonra alanları temizle
+        //    if (string.IsNullOrEmpty(entryPassword.Text) || string.IsNullOrEmpty(entryEmail.Text))
+        //    {
+        //        DisplayAlert("Hata", "Email veya Parola boş olamaz", "OK");
+        //        return;
+        //    }
+
+        //    if (entryEmail.Text.ToString() == "aytacyanik@" && entryPassword.Text.ToString() == "123456")
+        //    {
+        //        DisplayAlert("Giriş Yapıldı", $"Email: {entryEmail.Text} \nPassword: {entryPassword.Text}", "OK");
+        //    }
+        //    else
+        //    {
+        //        DisplayAlert("Hata", "Email veya Parola Hatalı", "OK");
+        //    }
+
+        //}
     }
 }

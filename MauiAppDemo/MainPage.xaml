@@ -1,125 +1,134 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppDemo.MainPage">
-
     <!--<StackLayout Orientation="Vertical" Spacing="50">
-     <BoxView BackgroundColor="Red" HeightRequest="50" WidthRequest="50"/>
-     <BoxView BackgroundColor="Blue" HeightRequest="80" WidthRequest="50"/>
+    <BoxView BackgroundColor="Red" HeightRequest="50" WidthRequest="50"/>
+    <BoxView BackgroundColor="Blue" HeightRequest="80" WidthRequest="50"/>
 
- </StackLayout>-->
+</StackLayout>-->
 
     <!--<Grid>
-     
-     <Grid.RowDefinitions>
-         <RowDefinition Height="*"/>
-         <RowDefinition Height="*"/>
-     </Grid.RowDefinitions>
+    
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
 
-     <Grid.ColumnDefinitions>
-         <ColumnDefinition Width="2*"/>
-         <ColumnDefinition Width="2*"/>
-     </Grid.ColumnDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="2*"/>
+        <ColumnDefinition Width="2*"/>
+    </Grid.ColumnDefinitions>
 
-     <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="Red"  />
-     <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="Blue" />
-     <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="Green" />
-     <BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="Aqua" />
+    <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="Red"  />
+    <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="Blue" />
+    <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="Green" />
+    <BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="Aqua" />
 
- </Grid>-->
+</Grid>-->
 
     <!--<FlexLayout Direction="Row" Wrap="Wrap" JustifyContent="Center">
-     <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Red"></BoxView>
-     <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Yellow"></BoxView>
-     <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Red"></BoxView>
-     <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Yellow"></BoxView>
-     <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Red"></BoxView>
-     <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Yellow"></BoxView>
-     <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Red"></BoxView>
-     <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Yellow"></BoxView>
-     <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Red"></BoxView>
-     <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Yellow"></BoxView>
-     <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Red"></BoxView>
-     <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Yellow"></BoxView>
+    <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Red"></BoxView>
+    <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Yellow"></BoxView>
+    <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Red"></BoxView>
+    <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Yellow"></BoxView>
+    <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Red"></BoxView>
+    <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Yellow"></BoxView>
+    <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Red"></BoxView>
+    <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Yellow"></BoxView>
+    <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Red"></BoxView>
+    <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Yellow"></BoxView>
+    <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Red"></BoxView>
+    <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Yellow"></BoxView>
 
- </FlexLayout>-->
+</FlexLayout>-->
     <!--<VerticalStackLayout VerticalOptions="Center">
 
-     <Label x:Name="btnLorem" Text="Hello World! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." 
-        TextColor="Red" 
-        MaxLines="5"
-        FontSize="30"
-        FontAttributes="Bold"
-        BackgroundColor="Green" 
-        HorizontalTextAlignment="Center" 
-        VerticalTextAlignment="Center"
-        HorizontalOptions="Center"
-        VerticalOptions="Center"/>
+    <Label x:Name="btnLorem" Text="Hello World! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." 
+       TextColor="Red" 
+       MaxLines="5"
+       FontSize="30"
+       FontAttributes="Bold"
+       BackgroundColor="Green" 
+       HorizontalTextAlignment="Center" 
+       VerticalTextAlignment="Center"
+       HorizontalOptions="Center"
+       VerticalOptions="Center"/>
 
-     <Label Text="Click!" HorizontalOptions="Center" FontSize="60" Background="#FF3200" TextColor="White" Padding="10">
-         <Label.GestureRecognizers>-->
+    <Label Text="Click!" HorizontalOptions="Center" FontSize="60" Background="#FF3200" TextColor="White" Padding="10">
+        <Label.GestureRecognizers>-->
     <!--Hareket tanımlama işlemidir(izleme/dokunma)-->
     <!--
-             <TapGestureRecognizer Tapped="Click_Tapped"/>
-         </Label.GestureRecognizers>
-     </Label>
-     
- </VerticalStackLayout>-->
+            <TapGestureRecognizer Tapped="Click_Tapped"/>
+        </Label.GestureRecognizers>
+    </Label>
+    
+</VerticalStackLayout>-->
 
     <!--<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
 
-     <Button Text="Click Me!" 
-             Clicked="Button_Clicked" 
-             Background="Black" 
-             FontSize="50"
-             TextColor="Red"
-             Padding="30"
-             ImageSource="dotnet_bot.png"/>
- </StackLayout>-->
+    <Button Text="Click Me!" 
+            Clicked="Button_Clicked" 
+            Background="Black" 
+            FontSize="50"
+            TextColor="Red"
+            Padding="30"
+            ImageSource="dotnet_bot.png"/>
+</StackLayout>-->
 
     <!--<Frame HorizontalOptions="Center" 
-        VerticalOptions="Center"
-        Padding="0"
-        HasShadow="True"
-        CornerRadius="100"
-        HeightRequest="200"
-        WidthRequest="200"
-        IsClippedToBounds="True"
-        BackgroundColor="Red">
+       VerticalOptions="Center"
+       Padding="0"
+       HasShadow="True"
+       CornerRadius="100"
+       HeightRequest="200"
+       WidthRequest="200"
+       IsClippedToBounds="True"
+       BackgroundColor="Red">
 
 
-        <Image Source="avatar.jpg" 
-         HorizontalOptions="Center" 
-          VerticalOptions="Center"
-          Aspect="AspectFill"
-           Opacity="0.9"/>
-    </Frame>-->
-    <StackLayout>
+       <Image Source="avatar.jpg" 
+        HorizontalOptions="Center" 
+         VerticalOptions="Center"
+         Aspect="AspectFill"
+          Opacity="0.9"/>
+   </Frame>-->
 
-        <Entry x:Name="entryEmail" Placeholder="Email Giriniz"
-            Keyboard="Email"
-            FontSize="15"
-            WidthRequest="150"
-            HeightRequest="50"
-            TextColor="Black"
-            BackgroundColor="PaleGreen"
-            MaxLength="50"
-            Margin="10,0,0,20"
-        />
-        <Entry x:Name="entryPassword" Placeholder="Şifrenizi Giriniz"
-           IsPassword="True"
-           Keyboard="Numeric"
-           WidthRequest="150"
+        <!--<Entry x:Name="entryEmail" Placeholder="Email Giriniz"
+           Keyboard="Email"
            FontSize="15"
+           WidthRequest="150"
+           HeightRequest="50"
            TextColor="Black"
-           BackgroundColor="OrangeRed"
-           MaxLength="10"
-           Completed="Entry_Completed"
-           TextChanged="Entry_TextChanged"
-           Margin="0,0,0,20"
-           />
-        <Button Text="Giriş Yap" Clicked="GirisYap_Clicked"/>
+           BackgroundColor="PaleGreen"
+           MaxLength="50"
+           Margin="10,0,0,20"
+       />
+       <Entry x:Name="entryPassword" Placeholder="Şifrenizi Giriniz"
+          IsPassword="True"
+          Keyboard="Numeric"
+          WidthRequest="150"
+          FontSize="15"
+          TextColor="Black"
+          BackgroundColor="OrangeRed"
+          MaxLength="10"
+          Completed="Entry_Completed"
+          TextChanged="Entry_TextChanged"
+          Margin="0,0,0,20"
+          />
+       <Button Text="Giriş Yap" Clicked="GirisYap_Clicked"/>-->
+        <StackLayout>
+        <Label x:Name="labelSonuc" 
+               Text="Lütfen Favori Renginizi Seçin" 
+               FontSize="20" 
+               TextColor="Blue" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Center"/>
 
-
+        <RadioButton GroupName="Colors" Value="Blue" Content="Mavi" CheckedChanged="RadioButton_CheckedChanged"/>
+        <RadioButton GroupName="Colors" Value="Green" Content="Yeşil" CheckedChanged="RadioButton_CheckedChanged"/>
+        <RadioButton GroupName="Colors" Value="Red" Content="Kırmızı" CheckedChanged="RadioButton_CheckedChanged"/>
+        <Label x:Name="selectedColorLabel"></Label>
     </StackLayout>
 </ContentPage>
